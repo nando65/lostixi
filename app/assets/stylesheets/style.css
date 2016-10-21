@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Rubik';
+    src: asset-url('Rubik-Bold.ttf') format('truetype');
+
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#header{
+  background-color:none;
+  height:100px;
+
+}
+
+body{
+  margin:0px;
+
+  font-family: 'Rubik';
+  *{
+    font-family: 'Rubik';
+  }
+}
+
+#slider{
+ background-image:url("slider.png");
+ margin-top:-100px;
+ margin-left:0px;
+ margin-right:0px;
+ height:700px;
+ width:100%;
+ background-repeat: no-repeat;
+ background-position:center;
+ background-position:top;
+ background-size:100%;
+
+}
+
+#register{
+  background-color:#df1c45;
+  height:32px;
+  float:right;
+  margin-right:20px;
+  margin-top:22px;
+  padding-top:13px;
+  padding-left:15px;
+  color:white;
+  text-decoration:none;
+  width:90px;
+  border-radius:15px;
+  font-family: 'Rubik', sans-serif;
+}
+
+#earn_money{
+  margin-left:35%;
+}
+#earn_money img{
+  margin-top:300px;
+}
+
+#send_with_us{
+  margin-left:5%;
+}
+
