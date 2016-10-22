@@ -1,0 +1,70 @@
+
+
+#header{
+  background-color:none;
+  height:100px;
+
+}
+
+body{
+  margin:0px;
+
+}
+
+#slider{
+ background-image:url("slider.png");
+ margin-top:-100px;
+ margin-left:0px;
+ margin-right:0px;
+ height:700px;
+ width:100%;
+ background-repeat: no-repeat;
+ background-position:center;
+ background-position:top;
+ background-size:100%;
+
+}
+
+#register{
+  background-color:#df1c45;
+  height:32px;
+  float:right;
+  margin-right:20px;
+  margin-top:22px;
+  padding-top:13px;
+  padding-left:15px;
+  color:white;
+  text-decoration:none;
+  width:90px;
+  border-radius:15px;
+  font-family: 'Rubik', sans-serif;
+}
+
+#earn_money{
+  margin-left:35%;
+}
+#earn_money img{
+  margin-top:300px;
+}
+
+#send_with_us{
+  margin-left:5%;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */
+
