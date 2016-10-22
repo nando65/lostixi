@@ -1,0 +1,43 @@
+<div id="post_slider">
+  <div id="origin_destination_bar">
+  <%= form_for @person do |f| %>
+
+        <%= f.text_field :name, id: 'origin' %>
+        <%= f.text_field :last_name, id: 'destination' %>
+
+    <%= f.submit 'Este boton se va', id: 'submit_origing_destination'%>
+  <% end %>
+  </div>
+</div>
+<div id="first_block_form">
+  <div id="pictures">
+    <!-- <div id='upload_picture'><i class="fa fa-camera fa-2x" aria-hidden="true"></i></div> -->
+       <%= form_for @person do |f| %>
+
+        <%= f.text_field :name, id: 'packet_name' %></br>
+        <%= f.text_field :last_name, id: 'packet_description' %>
+
+  <% end %>
+  </div>
+  <div id="separating_line">
+  </div>
+  <div id="packet_type">
+    <%= link_to(image_tag('pocket.png'), {controller: '/home', action: :index}, id: 'pocket') %>
+    <%= link_to(image_tag('envelope.png'), {controller: '/home', action: :index}, id: 'envelope') %>
+    <%= link_to(image_tag('backpack.png'), {controller: '/home', action: :index}, id: 'backpack') %>
+    <%= link_to(image_tag('car.png'), {controller: '/home', action: :index}, id: 'car') %>
+  </div>
+</div>
+<div id="second_block_form">
+  <div id="how_much_to_pay">
+    <i class="fa fa-usd" aria-hidden="true">&nbsp <span id="number">5</span></i>
+  </div>
+ <div id="how_much_to_pay">
+    <i class="fa fa-usd" aria-hidden="true">&nbsp <span id="number">10</span></i>
+  </div>
+   <div id="how_much_to_pay">
+    <i class="fa fa-usd" aria-hidden="true">&nbsp <span id="number">15</span></i>
+  </div>
+
+</div>
+<div>"hola"</div>

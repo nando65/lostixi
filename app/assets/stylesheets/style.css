@@ -1,7 +1,15 @@
+@font-face {
+    font-family: 'Rubik';
+    src: asset-url('Rubik-Bold.ttf') format('truetype');
+
+
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 #header{
-  background-color:none;
+  background-color:black;
   height:100px;
 
 }
@@ -9,6 +17,10 @@
 body{
   margin:0px;
 
+  font-family: 'Rubik';
+  *{
+    font-family: 'Rubik';
+  }
 }
 
 #slider{
@@ -51,3 +63,120 @@ body{
   margin-left:5%;
 }
 
+#post_slider{
+background-image:url("send_form_slider.png");
+ height:280px;
+ width:100%;
+ background-repeat: no-repeat;
+ background-position:center;
+ background-position:top;
+ background-size:100%;
+}
+
+#first_block_form{
+  background-color:black;
+  height:300px;
+}
+#pictures{
+  float:left;
+  background-color: none;
+  width: 49%;
+  height:300px;
+  text-align: center;
+}
+#separating_line{
+  float: left;
+  background-color: white;
+  margin-left: 13px;
+  height:280px;
+  width: 2px;
+  margin-top: 10px;
+
+}
+#packet_type{
+  float: right;
+  background-color: none;
+  height:250px;
+  width: 49%;
+  padding-top: 50px;
+}
+#envelope, #car, #backpack, #pocket{
+
+  margin-left: 6%;}
+
+#upload_picture{
+  height: 95px;
+  width: 95px;
+  border-style: dashed;
+  border-color: white;
+  color: white;
+  padding-left: 59px;
+  padding-top: 59px;
+  margin-left:10%;
+  margin-top: 70px;
+}
+#origin_destination_bar{
+  margin-left:25%;
+  padding-top: 120px;
+}
+#origin{
+  width:350px;
+  height:50px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border: 0px;
+}
+
+#destination{
+  width:350px;
+  height:50px;
+  margin-left: -3px;
+  border: 0px;
+}
+
+#submit_origing_destination{
+width: 300px;
+}
+
+#packet_name{
+  width:70%;
+  height:50px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 0px;
+  margin-bottom: 1px;
+
+  margin-top: 90px;
+}
+
+#packet_description{
+  width:70%;
+  height:50px;
+  border: 0px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+#second_block_form{
+  background-color:black;
+  height:300px;
+}
+
+#how_much_to_pay{
+  height: 65px;
+  width: 100px;
+  color: white;
+  border-radius: 100px;
+  border-color: white;
+  border: 2px solid;
+  text-align: center;
+  padding-top: 35px;
+  font-size: 20px;
+  float:left;
+  margin-right: 15px;
+}
+#how_much_to_pay i #number{
+  font-size: 32px;
+  font-family: 'Rubik', sans-serif;
+
+}
