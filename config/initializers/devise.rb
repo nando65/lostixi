@@ -16,7 +16,7 @@ Devise.setup do |config|
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
-config.omniauth :facebook, '388790654624959', 'dee913a029cb915a7cee2bca0f6c43b4', scope: 'email,user_friends,public_profile,user_location', info_fields: 'email,first_name, last_name, gender, picture, location'
+config.omniauth :facebook, '388790654624959', 'dee913a029cb915a7cee2bca0f6c43b4', scope: 'email', info_fields: 'name, email', callback_url: 'http://localhost:3000/users/auth/facebook/callback'
   # Configure the parent class responsible to send e-mails.
   # config.parent_mailer = 'ActionMailer::Base'
 
@@ -271,5 +271,5 @@ config.omniauth :facebook, '388790654624959', 'dee913a029cb915a7cee2bca0f6c43b4'
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
-
+config.secret_key = '967a6c0ddd9a7eaa660164f93da89f54022bb9ec28586a4b454af7f231ad37873f35837d224ae2b71f8c41e1afe53459c2df9c79ac1d682ef91970a7f576752c'
 end

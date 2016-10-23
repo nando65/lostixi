@@ -1,0 +1,61 @@
+<div id="post_slider">
+  <div id="origin_destination_bar">
+ <%= form_for(@post, id:'new_post') do |f| %>
+    <%= f.hidden_field :user_id, :value => current_user.id %>
+    <%= f.text_field :origin, id: 'origin', placeholder: " From: origin (e.g. Anywhere, United States)"%>
+    <%= f.text_field :destination, id: 'destination', placeholder: " To: destination (e.g. Spain)" %>
+  </div>
+</div>
+<div id="first_block_form">
+   <div id="packet_type">
+    <%= link_to(image_tag('pocket.png'), {controller: '/home', action: :index}, id: 'pocket') %>
+    <%= link_to(image_tag('envelope.png'), {controller: '/home', action: :index}, id: 'envelope') %>
+    <%= link_to(image_tag('backpack.png'), {controller: '/home', action: :index}, id: 'backpack') %>
+    <%= link_to(image_tag('car.png'), {controller: '/home', action: :index}, id: 'car') %>
+
+    <%= f.radio_button :packet_id, '1', :checked => true %>
+    <%= f.radio_button :packet_id, '2' %>
+    <%= f.radio_button :packet_id, '3' %>
+    <%= f.radio_button :packet_id, '4' %>
+  </div>
+  <div id="pictures">
+    <!-- <div id='upload_picture'><i class="fa fa-camera fa-2x" aria-hidden="true"></i></div> -->
+
+
+        <%= f.text_field :item_name, id: 'packet_name', placeholder: " Item name" %></br>
+        <%= f.text_field :item_description, id: 'packet_description', placeholder: " Item description"  %>
+
+  </div>
+  <!-- <div id="separating_line">
+  </div> -->
+
+</div>
+
+<div id="second_block_form">
+<div id="rewards_wrapper">
+<!-- <div id="select_reward">
+  <div>
+    <div id="how_much_to_pay">
+       <%= link_to '$ 5', {controller: '/home', action: :index}, id: 'number' %>
+    </div>
+   <div id="how_much_to_pay">
+      <%= link_to '$ 10', {controller: '/home', action: :index}, id: 'number' %>
+    </div>
+     <div id="how_much_to_pay">
+      <%= link_to '$ 15', {controller: '/home', action: :index}, id: 'number' %>
+    </div>
+    <div id="how_much_to_pay">
+      <%= link_to '$ 20', {controller: '/home', action: :index}, id: 'number' %>
+      <!-- <i class="fa fa-usd" aria-hidden="true">&nbsp <span id="number">20</span></i>
+    </div>
+</div></br>
+  <div> -->
+
+          <%= f.text_field :reward_amount, id: 'customized_reward', placeholder: " $$$ Enter reward amount (e.g. 5, 10, 15, 20) " %></br></br>
+  <%= f.submit 'FIND ME A TRUSTED TRAVELER', id: 'submit_origin_destination'%>
+    <% end %>
+  </div>
+</div>
+</div>
+
+<div>"hola"</div>
