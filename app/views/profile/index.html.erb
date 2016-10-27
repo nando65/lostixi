@@ -1,0 +1,27 @@
+
+
+   <div id="star"></div>
+   <div id="user_star"></div>
+
+<script>
+        $('#star').raty({
+    readOnly: true,
+    score: <%= @rating_average %>,
+    path: '/assets'
+
+  });
+
+  $('#user_star').raty({
+    // score: <%= @rating1.score %>,
+    score: <%= 0 %>,
+    path: '/assets',
+    click: function(score, evt) {
+      $.ajax({
+        // url: '/ratings/' + <%= @rating1.id %>,
+        url: '/ratings/' + <%= 0 %>,
+        type: 'PATCH',
+        data: { score: score }
+      });
+    }
+  });
+</script>

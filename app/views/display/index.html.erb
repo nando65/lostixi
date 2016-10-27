@@ -1,0 +1,49 @@
+<div id="display_slider">
+  <%= select_tag :endorsement_id, options_for_select(City.all.map { |p| [ p.city ]  }), name: 'endorse[endorsement_id]', class: "js-example-basic-single", :prompt => 'From - City (e.g. Miami, New York)'  %>
+  <div id="origin_destination_bar">
+    <%= form_for(@post, id:'new_post') do |f| %>
+    <%= f.text_field :origin, id: 'origin', placeholder: " From: origin (e.g. Anywhere, United States)"%>
+    <%= f.text_field :destination, id: 'destination', placeholder: " To: destination (e.g. Spain)" %>
+    <% end %>
+  </div>
+</div>
+<div id="post-filter-container">
+<div id="black-filter-wrapper">
+</div>
+
+<div id="white-wrapper">
+  <% @posts.each do |f| %>
+  <div id="post-container">
+    <div id="user-picture-posts">
+      <%= link_to image_tag current_user.profile_picture.url(:thumb), :controller => "profile", :action => "index" %>
+      <div id="user-name-post">
+    <%= f.user.name%>
+
+    </div>
+    </div>
+    <div id= "origin-destination-wrapper">
+    <div id="post-origin">
+    <%= f.origin %>     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-fighter-jet" aria-hidden="true"></i>
+    </div>
+    <div id="post-destination">
+    <%= f.destination %>
+    </div>
+  </div>
+    <div id="post-packet-name">
+       <%= f.item_name %></br>
+       <%= f.item_description %>
+    </div></br></br></br>
+    <div id="post-packet-reward">
+     REWARD: $<%= f.reward_amount %>
+    </div>
+  </div>
+<% end %>
+
+
+
+</div>
+</div>
+
+
+
+

@@ -1,15 +1,13 @@
-<div id="slider"><%= current_user.id %>
+<div id="slider">
   <div id="slider_title">Any item delivered to you by a trusted traveler...</div>
   <div id="home_two_center_buttons">
   <div id="earn_money_picture_title">
-  <%= link_to(image_tag('earn_money.png'), {controller: 'post', action: :index}, id: 'earn_money') %>
-  </br><%= link_to 'EARN MONEY', {controller: '/home', action: :index} %></div>
-
+  <%= link_to(image_tag('earn_money.png'), {controller: 'display', action: :index}, id: 'earn_money') %>
+  </br><%= link_to 'EARN MONEY', {controller: 'display', action: :index} %></div>
   <div id="ship_item_picture_title">
-  <%= link_to(image_tag('envia_con_nosotros.png'), {controller: '/home', action: :index}, id: 'send_with_us') %>
-  </br><%= link_to 'SHIP WITH US', {controller: '/home', action: :index} %></div>
+  <%= link_to(image_tag('envia_con_nosotros.png'), {controller: 'posts', action: :index}, id: 'send_with_us') %>
+  </br><%= link_to 'SHIP WITH US', {controller: 'posts', action: :index} %></div>
   </div>
-
 </div>
 
 

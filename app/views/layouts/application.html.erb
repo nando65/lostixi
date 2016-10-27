@@ -10,8 +10,9 @@
 <body>
   <div id="header">
     <%= link_to(image_tag('logo.png'), {controller: '/home', action: :index}, id: 'logo', 'data-no-turbolink' => true) %>
-
-    <%= link_to '<i class="fa fa-facebook-square" aria-hidden="true" style="margin-right:2px"></i>    SIGN IN'.html_safe, {controller: '/home', action: :index}, id: 'register' %>
+    <% if current_user.nil? %>
+    <%= link_to '<i class="fa fa-facebook-square" aria-hidden="true" style="margin-right:2px"></i>    SIGN IN'.html_safe, omniauth_authorize_path(:user, :facebook), id: 'register' %>
+    <% end %>
   </div>
 
 <%= yield %>

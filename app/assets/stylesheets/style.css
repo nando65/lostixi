@@ -7,6 +7,7 @@
   background-color:black;
   height:100px;
 }
+
 body{
   margin:0px;
 
@@ -46,8 +47,10 @@ body{
   color: white;
   font-family: 'Rubik', sans-serif;
   text-align: center;
+
   font-size: 30px;
-  margin-top: 250px;
+  padding-top: 250px;
+
 }
 #home_two_center_buttons{
 
@@ -76,6 +79,15 @@ color: white;
   text-align: right;
 }
 #post_slider{
+background-image:url("earn_money_slider.png");
+ height:280px;
+ width:100%;
+ background-repeat: no-repeat;
+ background-position:center;
+ background-position:top;
+ background-size:100%;
+}
+#display_slider{
 background-image:url("send_form_slider.png");
  height:280px;
  width:100%;
@@ -89,12 +101,43 @@ background-image:url("send_form_slider.png");
   height:450px;
   display: block;
 }
+#post-filter-container{
+  height: auto;
+  background-color: red;
+}
+#black-filter-wrapper{
+  background-color: black;
+  float: left;
+  width: 20%;
+  height: 600px;
+}
+#white-wrapper{
+  width: 80%;
+  height: auto;
+  float: right;
+  background-color: white;
+
+  }
 #pictures{
   float:left;
   background-color: none;
   width: 49%;
-
   text-align: center;
+}
+#user-picture-posts{
+  margin-left: 50px;
+  margin-top: 20px;
+  float: left;
+  margin-bottom: 0px;
+}
+#post-container{
+  width: 100%;
+ border-bottom: 1px solid #157579;
+ height: 150px;
+}
+#user-name-post{
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 #rewards_wrapper{
   width: 49%;
@@ -109,17 +152,69 @@ background-image:url("send_form_slider.png");
 }
 #packet_type{
   background-color: none;
-  height:150px;
+  height:170px;
   width: 49%;
   padding-top: 50px;
+
 }
+
+#packet_1, #packet_2, #packet_3, #packet_4{
+  float: left;
+ display: inline-block;
+ vertical-align: bottom;
+ text-align: center;
+ padding-left: 20px;
+
+}
+#packet_1{
+  padding-top: 58px;
+}
+#packet_2{
+  padding-top: 57px;
+}
+#packet_4{
+  padding-top: 57px;
+}
+
 #envelope, #car, #backpack, #pocket{
   margin-left: 6%;
 }
 #first_block_form form{
   height: 100px;
 }
-
+#post-destination{
+  float: left;
+  padding-right: 30px;
+  padding-left: 5px;
+  padding-top: 40px;
+  font-weight: bold;
+}
+#post-origin{
+  float: left;
+  padding-right: 30px;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+#deliver-to{
+  padding-top: 40px;
+  display: inline-block;
+  padding-left: 40px;
+}
+#origin-destination-wrapper{
+  width: 100%;
+  display: block;
+  height: 70px;
+}
+#post-packet-name{
+  float: left;
+  padding-left: 40px;
+  display: block;
+  height: 40px;
+}
+#post-packet-reward{
+  float: left;
+  padding-left: 40px;
+}
 #upload_picture{
   height: 95px;
   width: 95px;

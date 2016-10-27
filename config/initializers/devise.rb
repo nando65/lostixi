@@ -16,7 +16,7 @@ Devise.setup do |config|
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
-config.omniauth :facebook, '388790654624959', 'dee913a029cb915a7cee2bca0f6c43b4', scope: 'email', info_fields: 'name, email', callback_url: 'https://damp-oasis-74163.herokuapp.com/users/auth/facebook/callback'
+config.omniauth :facebook, '388790654624959', 'dee913a029cb915a7cee2bca0f6c43b4', scope: 'email, user_friends, public_profile', info_fields: 'name, email, picture', callback_url: 'http://localhost:3000/users/auth/facebook/callback'
   # Configure the parent class responsible to send e-mails.
   # config.parent_mailer = 'ActionMailer::Base'
 
