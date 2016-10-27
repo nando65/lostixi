@@ -1,10 +1,16 @@
 <div id="display_slider">
-  <%= select_tag :endorsement_id, options_for_select(City.all.map { |p| [ p.city ]  }), name: 'endorse[endorsement_id]', class: "js-example-basic-single", :prompt => 'From - City (e.g. Miami, New York)'  %>
   <div id="origin_destination_bar">
-    <%= form_for(@post, id:'new_post') do |f| %>
+
+    <%= form_for @post do |c| %>
+
+     <%= c.select_tag :endorsement_id, options_for_select(City.all.map { |p| [ p.city ]  }), name: 'endorse[endorsement_id]', class: "js-example-basic-single", id:'origin', :prompt => 'From - City (e.g. Miami, New York)'  %>
+     <%= c.select_tag :endorsement_id, options_for_select(City.all.map { |p| [ p.city ]  }), name: 'endorse[endorsement_id]', class: "js-example-basic-single", id:'origin', :prompt => 'From - City (e.g. Miami, New York)'  %>
+     <%= c.submit 'Agregar', class: 'button', style: "background-color:white; color:orange; border:none", data: { disable_with: "Wait.." } %>
+     <% end %>
+     <!-- <%= form_for(@post, id:'new_post') do |f| %>
     <%= f.text_field :origin, id: 'origin', placeholder: " From: origin (e.g. Anywhere, United States)"%>
     <%= f.text_field :destination, id: 'destination', placeholder: " To: destination (e.g. Spain)" %>
-    <% end %>
+    <% end %> -->
   </div>
 </div>
 <div id="post-filter-container">
